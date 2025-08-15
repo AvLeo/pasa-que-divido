@@ -1,0 +1,173 @@
+/* _______General_______ */
+a {
+    text-decoration: none;
+    color: #FFFF;
+    font-size: 14px;
+}
+
+p,
+h1,
+h2,
+h3,
+small,
+label {
+    color: #FFFF;
+}
+
+main{
+    width: 100%;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.button img {
+    width: 16px;
+    height: 16px;
+}
+
+.button-secondary {
+    padding: 10px 12px;
+    /* color: black */
+}
+
+.button-secondary:hover {
+    color: black;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+@keyframes bg-pan {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* _______BODY_______ */
+
+body {
+    background: #2A7B9B;
+    background: linear-gradient(180deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 79%, rgba(237, 221, 83, 1) 100%);
+    background-size: 120% 200%;
+    animation: bg-pan 1s ease-in-out infinite;
+    height: 100vh;
+}
+
+/* _______HEADER/FOOTER_______ */
+header,
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 36px;
+}
+
+/* _______HEADER_______ */
+header a {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+header a img {
+    width: 36px;
+    height: 36px;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+header nav {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* _______MAIN_______ */
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 112px 32px;
+
+}
+
+.logo-inicio {
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 22px;
+}
+
+.inicio p {
+    padding-top: 12px
+}
+
+.links_inicio {
+    display: flex;
+    gap: 8px;
+    margin-top: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio small {
+    margin-top: 46px;
+}
+
+/* _______FOOTER_______ */
+
+
+
+/* _______Form_______ */
+.ingreso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingreso div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card-ingreso{
+    border: 2px solid white;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+/* .ingreso{
+
+} */
+
+.max-height{
+    height: 100vh;
+}
