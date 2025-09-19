@@ -1,8 +1,28 @@
+/* ________FUENTES_______ */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 /* _______General_______ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-optical-sizing: auto;
+}
+
 a {
     text-decoration: none;
     color: #FFFF;
     font-size: 14px;
+}
+
+li{
+    list-style: none;
+}
+
+h1,h2,h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 p,
@@ -14,7 +34,7 @@ label {
     color: #FFFF;
 }
 
-main{
+main {
     width: 100%;
     padding: 16px;
     justify-content: center;
@@ -48,7 +68,7 @@ main{
     background-color: gray;
 }
 
-@keyframes bg-pan {
+@keyframes bg-pan-x {
     0% {
         background-position: 0% 50%;
     }
@@ -65,11 +85,13 @@ main{
 /* _______BODY_______ */
 
 body {
-    background: #2A7B9B;
-    background: linear-gradient(180deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 79%, rgba(237, 221, 83, 1) 100%);
-    background-size: 120% 200%;
-    animation: bg-pan 1s ease-in-out infinite;
-    height: 100vh;
+    background: linear-gradient(90deg, #2A7B9B 0%, #57C785 60%, #EDDD53 100%);
+    background-size: 300% 300%;
+    background-repeat: no-repeat;
+    animation: bg-pan-x 12s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* _______HEADER/FOOTER_______ */
@@ -78,7 +100,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 36px;
+    padding: 20px 36px;
 }
 
 /* _______HEADER_______ */
@@ -90,10 +112,7 @@ header a {
 }
 
 header a img {
-    width: 36px;
-    height: 36px;
-    padding: 2px;
-    border: 1px solid white;
+    width: 50px;
     border-radius: 10px;
 }
 
@@ -106,21 +125,25 @@ header nav {
 
 /* _______MAIN_______ */
 .inicio {
+    min-height: calc(100vh - 75px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 112px 32px;
+    padding: 60px;
+}
 
+.inicio-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
 }
 
 .logo-inicio {
-    width: 60px;
-    height: 60px;
-    padding: 2px;
-    border: 2px solid white;
-    border-radius: 10px;
-    margin-bottom: 22px;
+    width: 150px;
 }
 
 .inicio p {
@@ -128,6 +151,7 @@ header nav {
 }
 
 .links_inicio {
+    
     display: flex;
     gap: 8px;
     margin-top: 32px;
@@ -135,39 +159,104 @@ header nav {
     align-items: center;
 }
 
-.inicio small {
-    margin-top: 46px;
+
+/* _______CARDS_______ */
+.section-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 2px solid #2e8b8d;
+    border-bottom: 2px solid #2e8b8d;
+    padding: 60px 0px;
+}
+
+.card {
+    background: white;
+    border: 2px solid#2e8b8d;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    color: #2e8b8d;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #555;
 }
 
 /* _______FOOTER_______ */
+.redes {
+    display: flex;
+    gap: 16px;
 
+}
+
+.redes img{
+    width: 24px;
+    height: 24px;
+}
 
 
 /* _______Form_______ */
-.ingreso{
+.ingreso {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: calc(100vh - 100px);
 }
 
-.ingreso div{
+
+.ingreso div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.card-ingreso{
+.card-ingreso {
     border: 2px solid white;
     padding: 16px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
 
+.card-ingreso form{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.card-ingreso form input{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 8px;
+}
 /* .ingreso{
 
 } */
-
-.max-height{
-    height: 100vh;
-}
