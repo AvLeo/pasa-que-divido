@@ -10,7 +10,7 @@
     font-optical-sizing: auto;
 }
 
-a {
+a, span.swap {
     text-decoration: none;
     color: #FFFF;
     font-size: 14px;
