@@ -55,12 +55,11 @@ const pathRequiredLogin = [
     "/pages/grupos.html",
 ]
 
-console.log(path, isLoged(), pathRequiredLogin.includes(path));
 if (isLoged() && !pathRequiredLogin.includes(path)) {
-    window.location.href = "./pages/home.html";
+    window.location.href = "./home.html";
 } else if (!isLoged() && pathRequiredLogin.includes(path)) {
 
-    window.location.href = "./pages/ingresar.html";
+    window.location.href = "./ingresar.html";
 }
 
 if (!localStorage.getItem('usuarios')) {
@@ -79,7 +78,6 @@ $("#ingresar-btn").addEventListener("click", (e) => {
     const password = $("#pass-ingreso")
 
     const user = JSON.parse(localStorage.getItem('usuarios')).find(user => user.email === email.value && password.value === user.password)
-    console.log(user);
 
     if (!user) {
         email.classList.add("error")
@@ -89,7 +87,7 @@ $("#ingresar-btn").addEventListener("click", (e) => {
     }
 
     setLogin(user)
-    window.location.href = "./pages/home.html"
+    window.location.href = "./home.html"
 })
 
 
@@ -139,7 +137,6 @@ $("#cerrar-sesion")?.addEventListener("click", () => localStorage.removeItem("lo
 
 const swapConector = (estado) => {
     const estadoBox = $('.card-ingreso')
-    console.log(estado);
 
     if ($('#swap-btn').textContent === 'Crear una') {
         estadoBox.innerHTML = registerContent
