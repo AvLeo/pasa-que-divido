@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Home</title>
 </head>
 
 <body>
     <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg background-cards">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo.png" alt="" class="nav-icon">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,22 +27,129 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Grupos</a>
+                        <a class="nav-link" href="./grupos.html">Grupos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mis Gastos</a>
+                        <a class="nav-link" href="./mis-gastos.html">Mis Gastos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Cerrar sesión</a>
+                        <a class="nav-link" id="cerrar-sesion">Cerrar sesión</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- NAV BAR -->
-
-
-    <h1>Hola mundo</h1>
+    <main>
+        <section class="home">
+            <div class="grupos background-cards">
+                <h3>Grupos</h3>
+                <article class="grupo-card">
+                    <h4>Nombre Grupos</h4>
+                    <div class="detalle">
+                        <img src="../img/usuario.webp" alt="" width="20px" height="20px">
+                        <p> 3 miembros</p>
+                    </div>
+                    <div class="miembros-grupo">
+                        <small>pepito</small>
+                        <small>juan</small>
+                        <small>perez</small>
+                    </div>
+                </article>
+                <article class="grupo-card">
+                    <h4>Nombre Grupos</h4>
+                    <div class="detalle">
+                        <img src="../img/usuario.webp" alt="" width="20px" height="20px">
+                        <p> 3 miembros</p>
+                    </div>
+                    <div class="miembros-grupo">
+                        <small>pepito</small>
+                        <small>juan</small>
+                        <small>perez</small>
+                    </div>
+                </article>
+                <article class="grupo-card">
+                    <h4>Nombre Grupos</h4>
+                    <div class="detalle">
+                        <img src="../img/usuario.webp" alt="" width="20px" height="20px">
+                        <p> 3 miembros</p>
+                    </div>
+                    <div class="miembros-grupo">
+                        <small>pepito</small>
+                        <small>juan</small>
+                        <small>perez</small>
+                    </div>
+                </article>
+            </div>
+            <div class="mis-gastos background-cards">
+                <h3>Ultimos gastos</h3>
+                <article class="detalle">
+                    <div>
+                        <p> Salida a bar</p>
+                        <small>$30000</small>
+                    </div>
+                    <div>
+                        <p> Salida a bar</p>
+                        <small>$30000</small>
+                    </div>
+                    <div>
+                        <p> Salida a bar</p>
+                        <small>$30000</small>
+                    </div>
+                    <div>
+                        <p> Salida a bar</p>
+                        <small>$30000</small>
+                    </div>
+                </article>
+                <div class="total">
+                    <h4>Total</h4>
+                    <small>$12000</small>
+                </div>
+            </div>
+            <div class="conocenos background-cards">
+                <a class="button" style="width: 100%"> Ir a mis gastos</a>
+                <a class="button" style="width: 100%;">
+                    Crear grupo
+                </a>
+            </div>
+            <div class="dashboard background-cards">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/restautante-1.jpg" class="d-block w-100 img-carr" alt="restautante-1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/restautante-2.jpg" class="d-block w-100 img-carr" alt="restautante-2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/restautante-2.jpg" class="d-block w-100 img-carr" alt="restautante-3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="banner background-cards">
+                <h3>Usuarios frecuentes</h3>
+                <div class="miembros-grupo">
+                    <small>pepito</small>
+                    <small>juan</small>
+                    <small>perez</small>
+                    <small>pepito</small>
+                    <small>juan</small>
+                    <small>perez</small>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
