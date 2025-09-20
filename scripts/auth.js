@@ -49,6 +49,8 @@ const $ = (selector) => document.querySelector(selector);
 
 const isLoged = () => !!localStorage.getItem('loged');
 const path = window.location.pathname
+console.log(path);
+
 const pathRequiredLogin = [
     "/pages/home.html",
     "/pages/mis-gastos.html",
