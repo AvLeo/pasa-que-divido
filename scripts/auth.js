@@ -57,7 +57,7 @@ const pathRequiredLogin = [
     "/pages/grupos.html",
 ]
 
-if (isLoged() && !pathRequiredLogin.includes(path)) {
+if (isLoged() && path.includes("/ingresar.html")) {
     window.location.href = "./home.html";
 } else if (!isLoged() && pathRequiredLogin.includes(path)) {
 
