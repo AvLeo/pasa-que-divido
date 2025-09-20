@@ -57,10 +57,10 @@ const pathRequiredLogin = [
 
 console.log(path, isLoged(), pathRequiredLogin.includes(path));
 if (isLoged() && !pathRequiredLogin.includes(path)) {
-    window.location.href = "/pages/home.html";
+    window.location.href = "./pages/home.html";
 } else if (!isLoged() && pathRequiredLogin.includes(path)) {
 
-    window.location.href = "/pages/ingresar.html";
+    window.location.href = "./pages/ingresar.html";
 }
 
 if (!localStorage.getItem('usuarios')) {
@@ -89,7 +89,7 @@ $("#ingresar-btn").addEventListener("click", (e) => {
     }
 
     setLogin(user)
-    window.location.href = "/pages/home.html"
+    window.location.href = "./pages/home.html"
 })
 
 
