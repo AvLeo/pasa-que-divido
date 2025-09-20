@@ -132,8 +132,11 @@ const attachRegistroEvent = () => {
 }
 
 // LOGOUT 
+function logout (){
+    localStorage.removeItem("loged")
+    return window.location.href = "/"
+} 
 
-$("#cerrar-sesion")?.addEventListener("click", () => localStorage.removeItem("loged"))
 
 // SWAP
 
