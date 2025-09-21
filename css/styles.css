@@ -424,6 +424,38 @@ header nav {
     border-radius: 10px;
 }
 
+.team h3 {
+ text-align: center;
+}
+
+.container-team{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.card-team{
+    display: flex;
+    width: 100%;
+}
+
+.info-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.img-team-izq{
+    width: 200px;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.img-team-der{
+    width: 200px;
+    border-radius: 0px 12px 12px 0px;
+}
+
 @media (max-width: 600px) {
     body {
         font-size: 14px;
