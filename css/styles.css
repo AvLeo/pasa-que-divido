@@ -65,6 +65,12 @@ button .button {
     height: 16px;
 }
 
+.button:hover{
+    background-color: #2A7B9B;
+    color: white;
+    transition: ease 200ms;
+}
+
 .button-secondary {
     padding: 10px 12px;
     /* color: black */
@@ -272,6 +278,11 @@ header nav {
     align-items: center;
     gap: 10px;
     width: 100%;
+}
+
+.action-hover:hover{
+    color: #2A7B9B;
+    transition: ease 300ms;
 }
 
 /* .ingreso{
@@ -628,7 +639,7 @@ form input {
 
 @media (max-width: 500px) {
     .ingreso {
-        min-height: 100%;
+        min-height: 100vh;
         min-width: 100%;
         align-items: normal;
     }
@@ -636,7 +647,7 @@ form input {
     .card-ingreso {
         border: none;
         padding: 0px;
-        min-height: 100vh;
+        padding: 20px;
     }
 
     .card-ingreso form {
