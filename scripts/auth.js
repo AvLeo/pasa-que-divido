@@ -59,8 +59,7 @@ const pathRequiredLogin = [
 
 if (isLoged() && path.includes("/ingresar.html")) {
     window.location.href = "./home.html";
-} else if (!isLoged() && pathRequiredLogin.includes(path)) {
-
+} else if (!isLoged() && pathRequiredLogin.some(p => path.includes(p))) {
     window.location.href = "./ingresar.html";
 }
 
