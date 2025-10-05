@@ -1,0 +1,30 @@
+{
+  "name": "pasa-que-divido",
+  "version": "1.0.0",
+  "description": "* Proyecto de curso de Desarrollo web - CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "sass scss/estilos.scss css/estilos.css --style=expanded --source-map",
+    "watch:css": "sass scss:css --watch --style=expanded --source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvLeo/pasa-que-divido.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AvLeo/pasa-que-divido/issues"
+  },
+  "homepage": "https://github.com/AvLeo/pasa-que-divido#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

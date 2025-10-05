@@ -1,0 +1,27 @@
+$ff-quicksand: "Quicksand", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$ff-montserrat: "Montserrat", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+
+$colors: (
+  primary: #2A7B9B,
+  teal: #2e8b8d,
+  green: #57C785,
+  yellow: #EDDD53,
+  gray-700: #555555,
+  white: #ffffff,
+  black: #000000
+);
+
+$radius-sm: 8px;
+$radius-md: 10px;
+$radius-lg: 12px;
+$radius-xl: 20px;
+
+$space-1: 5px;
+$space-2: 8px;
+$space-3: 10px;
+$space-4: 12px;
+$space-5: 16px;
+$space-6: 20px;
+$space-7: 24px;
+$space-8: 32px;
+$space-9: 36px;

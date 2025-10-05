@@ -1,0 +1,114 @@
+@use "../abstracts" as *;
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: $space-2;
+    width: 100%;
+    
+    @include respond-down(sm) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.mis-gastos {
+    grid-area: 1 / 2 / 3 / 3;
+    border: 2px solid c(black);
+    border-radius: $radius-sm;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: $space-6;
+
+    p {
+        margin: 0;
+    }
+
+    .detalle {
+        border-top: 2px solid rgba(255, 255, 255, .2);
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 6px;
+
+        div {
+            @include flex-box(flex, space-between, center);
+        }
+    }
+
+    .total {
+        @include flex-box(flex, space-between, center);
+    }
+}
+
+.conocenos {
+    display: flex;
+    flex-direction: column;
+    grid-area: 3 / 2 / 4 / 3;
+    justify-content: center;
+    gap: $space-2;
+    max-height: 120px;
+    padding: 5px;
+}
+
+.banner {
+    grid-area: 5 / 1 / 6 / 3;
+    max-height: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: $space-6;
+
+    div {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include respond-down(sm) {
+        padding: 20px;
+        max-height: 170px;
+    }
+}
+
+.dashboard {
+    grid-area: 4 / 1 / 5 / 3;
+    max-height: 200px;
+}
+
+.img-carr {
+    height: 200px;
+    object-fit: cover;
+    border-radius: $radius-lg;
+}
+
+.grupos {
+    grid-area: 1 / 1 / 4 / 2;
+    padding: 5px;
+    max-height: 600px;
+
+    h3 {
+        border-bottom: 2px solid rgba(255, 255, 255, .2);
+        text-align: center;
+        margin: 2px 18px;
+    }
+}
+
+.miembros-grupo {
+    display: flex;
+    gap: $space-4;
+
+    @include respond-down(sm) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    small {
+        background-color: c(white);
+        color: c(black);
+        padding: 2px $space-4;
+        border-radius: $radius-md;
+    }
+}

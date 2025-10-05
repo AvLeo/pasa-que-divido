@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+* {
+    font-family: $ff-quicksand, sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    background: linear-gradient(90deg, c(primary) 0%, c(green) 60%, c(yellow) 100%);
+    background-size: 300% 300%;
+    background-repeat: no-repeat;
+    animation: bg-pan-x 12s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include respond-down(sm) {
+        font-size: 14px;
+    }
+}
+
+main {
+    width: 100%;
+    padding: $space-5;
+    @include flex-center();
+    flex-direction: column;
+}

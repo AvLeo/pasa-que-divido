@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+header,
+footer {
+    @include flex-center($space-7);
+    justify-content: space-between;
+    padding: 20px $space-9;
+}
+
+header {
+    a {
+        @include flex-center(12px);
+    }
+
+    a img {
+        width: 50px;
+        border-radius: $radius-md;
+    }
+
+    nav {
+        @include flex-center(5px);
+    }
+}
