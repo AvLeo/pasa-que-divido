@@ -16,7 +16,6 @@
 
 .card-ingreso {
     @include flex-box(flex, center, center, column);
-    border: 2px solid c(white);
     padding: $space-5;
     border-radius: $radius-md;
     gap: $space-5;

@@ -15,7 +15,6 @@
 
 .mis-gastos {
     grid-area: 1 / 2 / 3 / 3;
-    border: 2px solid c(black);
     border-radius: $radius-sm;
     text-align: center;
     display: flex;
@@ -98,12 +97,14 @@
 .miembros-grupo {
     display: flex;
     gap: $space-4;
+    flex-wrap: wrap;
 
-    @include respond-down(sm) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
+    // @include respond-down(sm) {
+    //     display: grid;
+    //     grid-template-columns: repeat(3, 1fr);
+    //     grid-template-rows: repeat(2, 1fr);
+    //     flex-wrap: wrap;
+    // }
 
     small {
         background-color: c(white);

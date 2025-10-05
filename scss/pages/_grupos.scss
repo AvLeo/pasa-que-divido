@@ -1,0 +1,69 @@
+@use "../abstracts" as *;
+
+.section-grupos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    gap: 10px;
+
+    @include respond-down(xs){
+        @include flex-box(flex, center, center, column)
+    }
+}
+
+.primary {
+    grid-area: 1 / 1 / 2 / 5;
+    @include bg-cards();
+    @extend %card-secondary;
+    width: 100%;
+    flex-direction: column;
+}
+
+.secondary {
+    grid-area: 2 / 1 / 3 / 3;
+    @include bg-cards();
+    @extend %card-secondary;
+    flex-direction: column;
+}
+
+.tertiary {
+    grid-area: 2 / 3 / 3 / 5;
+    @include bg-cards();
+    @extend %card-secondary;
+    flex-direction: column;
+}
+
+.others {
+    grid-area: 3 / 1 / 6 / 5;
+
+    >div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        >article {
+            @extend %card-base;
+            @include bg-cards();
+
+            >img {
+                @include img-cards(150px, 12px 0 0 12px);
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+
+        @include respond-down(xl) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include respond-down(m) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+}

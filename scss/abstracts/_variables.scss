@@ -25,3 +25,40 @@ $space-6: 20px;
 $space-7: 24px;
 $space-8: 32px;
 $space-9: 36px;
+
+
+%card-base {
+  display: flex;
+  width: 100%;
+  border-radius: $radius-lg;
+  border: 1px solid rgba(255, 255, 255, .2);
+  color: c(white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .05);
+
+  >div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
+
+%card-secondary {
+  @extend %card-base;
+  flex-direction: column;
+
+  >div {
+    justify-content: center;
+    align-items: center;
+    padding: 12px
+  };
+
+  >img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    height: 150px;
+    object-fit: cover;
+    align-content: center;
+  }
+}

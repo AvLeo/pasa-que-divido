@@ -1,60 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <title>Grupos</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <title>Grupos</title>
+    </head>
 
-<body>
-    <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg gbackround-cards">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../img/logo.webp" alt="" class="nav-icon">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./home.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Grupos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./mis-gastos.html">Mis Gastos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./ingresar.html" onclick="logout()">Cerrar sesión</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- NAV BAR -->
-    <main>
-        <h2>Mis grupos</h2>
-        <section class="inicio">
-            <div style="display: flex; flex-direction: column;flex: 1; justify-content: center; align-items: center;">
-                <h3>En progreso....</h3>
-                <div class="spinner-border text-info" role="status">
-                    <span class="visually-hidden">Loading...</span>
+    <body>
+        <!-- NAV BAR -->
+        <nav class="navbar navbar-expand-lg gbackround-cards">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo.webp" alt="" class="nav-icon">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./home.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Grupos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./mis-gastos.html">Mis Gastos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ingresar.html" onclick="logout()">Cerrar sesión</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </main>
-    <script src="../scripts/auth.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</body>
+        </nav>
+        <!-- NAV BAR -->
+        <main>
+            <h2>Mis grupos</h2>
+            <section class="section-grupos">
+                <div class="primary">
+                    <img src="../img/grupos/grupo-amigos1.webp" alt="" width="150px">
+                    <div>
+                        <h4>Nombre Grupo</h4>
+                        <div class="miembros-grupo">
+                            <small>Desarrollador</small>
+                            <small>Fullstack</small>
+                            <small>Teach Lead</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondary">
+                    <img src="../img/grupos/grupo-amigos1.webp" alt="" width="150px">
+                    <div>
+                        <h4>Nombre Grupo</h4>
+                        <div class="miembros-grupo">
+                            <small>Desarrollador</small>
+                            <small>Fullstack</small>
+                            <small>Teach Lead</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="tertiary">
+                    <img src="../img/grupos/grupo-amigos2.webp" alt="" width="150px">
+                    <div>
+                        <h4>Nombre Grupo</h4>
+                        <div class="miembros-grupo">
+                            <small>Desarrollador</small>
+                            <small>Fullstack</small>
+                            <small>Teach Lead</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="others">
+                    <div>
+                        <article class="">
+                            <img src="../img/grupos/grupo-amigos3.webp" alt="" width="150px">
+                            <div>
+                                <h4>Nombre Grupo</h4>
+                                <div class="miembros-grupo">
+                                    <small>Desarrollador</small>
+                                    <small>Fullstack</small>
+                                    <small>Teach Lead</small>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="">
+                            <img src="../img/grupos/grupo-amigos4.webp" alt="" width="150px">
+                            <div>
+                                <h4>Nombre Grupo</h4>
+                                <div class="miembros-grupo">
+                                    <small>Desarrollador</small>
+                                    <small>Fullstack</small>
+                                    <small>Teach Lead</small>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="">
+                            <img src="../img/grupos/grupo-amigos1.webp" alt="" width="150px">
+                            <div>
+                                <h4>Nombre Grupo</h4>
+                                <div class="miembros-grupo">
+                                    <small>Desarrollador</small>
+                                    <small>Fullstack</small>
+                                    <small>Teach Lead</small>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="">
+                            <img src="../img/grupos/grupo-amigos2.webp" alt="" width="150px">
+                            <div>
+                                <h4>Nombre Grupo</h4>
+                                <div class="miembros-grupo">
+                                    <small>Desarrollador</small>
+                                    <small>Fullstack</small>
+                                    <small>Teach Lead</small>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="../scripts/auth.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    </body>
 
 </html>

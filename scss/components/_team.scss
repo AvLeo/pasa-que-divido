@@ -6,22 +6,14 @@
     gap: 20px;
 }
 
-.card-team {
-    display: flex;
-    width: 100%;
-}
-
-.info-team {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 20px;
+.card-team{
+    @extend %card-base;
 }
 
 .img-team-izq {
-    @include cards-team(200px, 12px 0 0 12px)
+    @include img-cards(200px, 12px 0 0 12px)
 }
 
 .img-team-der {
-    @include cards-team(200px, 0 12px 12px 0)
+    @include img-cards(200px, 0 12px 12px 0)
 }
