@@ -5,7 +5,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: $space-2;
-
+    width: 100%;
+    
     @include respond-down(sm) {
         display: flex;
         flex-direction: column;

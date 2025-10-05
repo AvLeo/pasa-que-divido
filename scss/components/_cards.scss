@@ -7,6 +7,7 @@
     border-top: 2px solid c(teal);
     border-bottom: 2px solid c(teal);
     padding: 60px 0;
+    width: 100%;
 
     @include respond-down(md) {
         flex-direction: row;

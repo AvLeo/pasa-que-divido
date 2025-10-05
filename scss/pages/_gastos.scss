@@ -5,6 +5,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: $space-2;
+    width: 100%;
 
     h4,
     small {

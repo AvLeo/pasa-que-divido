@@ -152,6 +152,7 @@ button .button {
   border-top: 2px solid #2e8b8d;
   border-bottom: 2px solid #2e8b8d;
   padding: 60px 0;
+  width: 100%;
 }
 @media (max-width: 950px) {
   .section-cards {
@@ -393,6 +394,7 @@ button .button {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 8px;
+  width: 100%;
 }
 @media (max-width: 600px) {
   .home {
@@ -507,6 +509,7 @@ button .button {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 8px;
+  width: 100%;
 }
 .detalles-gastos h4,
 .detalles-gastos small {
