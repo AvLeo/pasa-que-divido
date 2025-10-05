@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+
+.redes {
+    display: flex;
+    gap: $space-5;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.bg-body-tertiary {
+    background-color: c(primary);
+}
+
+.nav-icon {
+    width: 30px;
+    border-radius: $radius-md;
+}
+
+.team {
+    h3 {
+        text-align: center;
+    }
+}
+
+.active {
+    color: c(white) !important;
+    background-color: c(primary) !important;
+    border-radius: $radius-lg;
+}
+
+.nav-link {
+    border-radius: $radius-lg;
+
+    &:hover {
+        background-color: #555;
+        opacity: 80%;
+        color: c(white);
+        transition: ease 300ms;
+    }
+}

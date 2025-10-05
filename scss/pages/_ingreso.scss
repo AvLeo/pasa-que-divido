@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+.ingreso {
+    @include flex-box(flex, center, center, column);
+    min-height: calc(100vh - 100px);
+
+    .footer-form {
+        @include flex-center(10px);
+        width: 100%;
+    }
+}
+
+.ingreso div {
+    @include flex-box(flex, center, flex-start, column);
+}
+
+.card-ingreso {
+    @include flex-box(flex, center, center, column);
+    border: 2px solid c(white);
+    padding: $space-5;
+    border-radius: $radius-md;
+    gap: $space-5;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        width: 100%;
+
+        input {
+            background-color: c(white);
+            color: c(black);
+            border: 2px solid c(white);
+            border-radius: $radius-md;
+            padding: 8px;
+            width: 100%;
+        }
+    }
+
+    @include respond-down(xs) {
+        border: none;
+        padding: 20px;
+    }
+}

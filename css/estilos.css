@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes bg-pan-x {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+a,
+span.swap {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+}
+
+p,
+h1,
+h2,
+h3,
+small,
+label {
+  color: #ffffff;
+}
+
+* {
+  font-family: "Quicksand", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  background: linear-gradient(90deg, #2A7B9B 0%, #57C785 60%, #EDDD53 100%);
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+  animation: bg-pan-x 12s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+main {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-between;
+  padding: 20px 36px;
+}
+
+header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+header a img {
+  width: 50px;
+  border-radius: 10px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.button img {
+  width: 16px;
+  height: 16px;
+}
+.button:hover {
+  background-color: #2A7B9B;
+  color: #ffffff;
+  transition: ease 200ms;
+}
+
+button .button {
+  border: 2px solid yellow;
+}
+
+.button-secondary {
+  padding: 10px 12px;
+}
+.button-secondary:hover {
+  color: #000000;
+  border-radius: 10px;
+  background-color: gray;
+}
+
+.action-hover:hover {
+  color: #2A7B9B;
+  transition: ease 300ms;
+}
+
+.section-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: 2px solid #2e8b8d;
+  border-bottom: 2px solid #2e8b8d;
+  padding: 60px 0;
+}
+@media (max-width: 950px) {
+  .section-cards {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 12px;
+  }
+}
+
+.card {
+  background: #ffffff;
+  border: 2px solid #2e8b8d;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 300px;
+}
+@media (max-width: 950px) {
+  .card {
+    min-width: 200px;
+  }
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card-content {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.card-content h3 {
+  font-size: 24px;
+  color: #2e8b8d;
+}
+.card-content p {
+  font-size: 16px;
+  color: #555555;
+}
+
+.background-cards {
+  background: linear-gradient(135deg, rgba(109, 178, 162, 0.4), rgba(91, 163, 148, 0.4));
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.grupo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(109, 178, 162, 0.8), rgba(91, 163, 148, 0.8));
+  padding: 10px;
+  margin: 10px;
+  border-radius: 12px;
+  gap: 8px;
+}
+.grupo-card .detalle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.grupo-card .detalle p {
+  margin: 0;
+}
+
+.redes {
+  display: flex;
+  gap: 16px;
+}
+.redes img {
+  width: 24px;
+  height: 24px;
+}
+
+.bg-body-tertiary {
+  background-color: #2A7B9B;
+}
+
+.nav-icon {
+  width: 30px;
+  border-radius: 10px;
+}
+
+.team h3 {
+  text-align: center;
+}
+
+.active {
+  color: #ffffff !important;
+  background-color: #2A7B9B !important;
+  border-radius: 12px;
+}
+
+.nav-link {
+  border-radius: 12px;
+}
+.nav-link:hover {
+  background-color: #555;
+  opacity: 80%;
+  color: #ffffff;
+  transition: ease 300ms;
+}
+
+.container-team {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-team {
+  display: flex;
+  width: 100%;
+}
+
+.info-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.img-team-izq {
+  width: 200px;
+  border-radius: 12px 0 0 12px;
+}
+
+.img-team-der {
+  width: 200px;
+  border-radius: 0 12px 12px 0;
+}
+
+.inicio {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+.inicio p {
+  padding-top: 12px;
+}
+
+.inicio-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+}
+
+.logo-inicio {
+  width: 150px;
+}
+
+.links_inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+@media (max-width: 500px) {
+  .ingreso {
+    min-height: 100vh;
+    min-width: 100%;
+    align-items: normal;
+  }
+  .mian {
+    padding: 0;
+  }
+  footer {
+    display: none;
+  }
+}
+.ingreso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+}
+.ingreso .footer-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.ingreso div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-ingreso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  gap: 16px;
+}
+.card-ingreso form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+}
+.card-ingreso form input {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 8px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .card-ingreso {
+    border: none;
+    padding: 20px;
+  }
+}
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+}
+@media (max-width: 600px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.mis-gastos {
+  grid-area: 1/2/3/3;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.mis-gastos p {
+  margin: 0;
+}
+.mis-gastos .detalle {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 6px;
+}
+.mis-gastos .detalle div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mis-gastos .total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conocenos {
+  display: flex;
+  flex-direction: column;
+  grid-area: 3/2/4/3;
+  justify-content: center;
+  gap: 8px;
+  max-height: 120px;
+  padding: 5px;
+}
+
+.banner {
+  grid-area: 5/1/6/3;
+  max-height: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.banner div {
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .banner {
+    padding: 20px;
+    max-height: 170px;
+  }
+}
+
+.dashboard {
+  grid-area: 4/1/5/3;
+  max-height: 200px;
+}
+
+.img-carr {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.grupos {
+  grid-area: 1/1/4/2;
+  padding: 5px;
+  max-height: 600px;
+}
+.grupos h3 {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  margin: 2px 18px;
+}
+
+.miembros-grupo {
+  display: flex;
+  gap: 12px;
+}
+@media (max-width: 600px) {
+  .miembros-grupo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.miembros-grupo small {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 2px 12px;
+  border-radius: 10px;
+}
+
+.detalles-gastos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+}
+.detalles-gastos h4,
+.detalles-gastos small {
+  margin: 0;
+}
+
+.total-anio {
+  grid-area: 1/1/2/2;
+}
+
+.total-mes {
+  grid-area: 1/2/2/3;
+}
+
+.promedio-mes {
+  grid-area: 1/3/2/4;
+}
+
+.ultima-semana {
+  grid-area: 1/4/2/5;
+}
+
+.img-card {
+  width: 32px;
+}
+
+.resumen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #2A7B9B;
+  margin: 12px;
+}
+.resumen h3 {
+  font-size: 20px;
+  margin: 0;
+  align-items: center;
+}
+
+.cards-resumen {
+  display: flex;
+  flex-direction: column;
+}
+
+.agregar-gasto {
+  grid-area: 2/1/6/2;
+}
+
+.lista-gastos {
+  grid-area: 2/2/5/5;
+}
+
+.viajes {
+  grid-area: 5/2/6/3;
+}
+
+.salida {
+  grid-area: 5/3/6/4;
+}
+
+.otro {
+  grid-area: 5/4/6/5;
+}
+
+.box-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form,
+form input {
+  width: 100%;
+}
+
+.total-anio,
+.total-mes,
+.ultima-semana,
+.promedio-mes,
+.viajes,
+.salida,
+.otro {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+}
+.total-anio h4,
+.total-mes h4,
+.ultima-semana h4,
+.promedio-mes h4,
+.viajes h4,
+.salida h4,
+.otro h4 {
+  font-size: 18px;
+}
+.total-anio small,
+.total-mes small,
+.ultima-semana small,
+.promedio-mes small,
+.viajes small,
+.salida small,
+.otro small {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

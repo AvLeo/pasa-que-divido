@@ -1,0 +1,6 @@
+@use "sass:map";
+@use "../abstracts/variables" as v;
+
+@function c($name) {
+    @return map.get(v.$colors, $name);
+}

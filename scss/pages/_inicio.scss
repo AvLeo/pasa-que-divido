@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+.inicio {
+    min-height: calc(100vh - 75px);
+    @include flex-box(flex, space-between, center, column);
+    padding: 60px;
+
+    p {
+        padding-top: 12px;
+    }
+}
+
+.inicio-content {
+    @include flex-box(flex, center, center, column);
+    text-align: center;
+    height: 50vh;
+}
+
+.logo-inicio {
+    width: 150px;
+}
+
+.links_inicio {
+    @include flex-center($space-2);
+    margin-top: $space-8;
+}
+
+@media (max-width: 500px) {
+    .ingreso {
+        min-height: 100vh;
+        min-width: 100%;
+        align-items: normal;
+    }
+
+    .mian {
+        padding: 0;
+    }
+
+    footer {
+        display: none;
+    }
+}

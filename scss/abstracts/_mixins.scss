@@ -1,0 +1,36 @@
+@use "sass:map";
+
+$bp: (
+  xs: 500px,
+  sm: 600px,
+  md: 950px
+);
+
+@mixin respond-down($key) {
+  @media (max-width: map.get($bp, $key)) {
+    @content;
+  }
+}
+
+@mixin flex-center($gap: 0) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin bg-cards($opacity: 0.4) {
+  background: linear-gradient(135deg, rgba(109, 178, 162, $opacity), rgba(91, 163, 148, $opacity));
+}
+
+@mixin cards-team($width: 200px, $b-radius: 0 0 0 0) {
+  width: $width;
+  border-radius: $b-radius;
+}
+
+@mixin flex-box($display, $justify, $align, $flex-direction: row) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify;
+  align-items: $align;
+}

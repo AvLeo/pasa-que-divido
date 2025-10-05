@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+
+.button {
+    background-color: c(white);
+    color: c(black);
+    border-radius: $radius-md;
+    padding: $space-3 $space-4;
+    @include flex-center($space-2);
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+
+    &:hover {
+        background-color: c(primary);
+        color: c(white);
+        transition: ease 200ms;
+    }
+}
+
+button {
+    .button {
+        border: 2px solid yellow;
+    }
+}
+
+.button-secondary {
+    padding: $space-3 $space-4;
+
+    &:hover {
+        color: c(black);
+        border-radius: $radius-md;
+        background-color: gray;
+    }
+}
+
+.action-hover {
+    &:hover {
+        color: c(primary);
+        transition: ease 300ms;
+    }
+}

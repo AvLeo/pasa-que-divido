@@ -1,0 +1,103 @@
+@use "../abstracts" as *;
+
+.detalles-gastos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: $space-2;
+
+    h4,
+    small {
+        margin: 0;
+    }
+}
+
+.total-anio {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.total-mes {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.promedio-mes {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.ultima-semana {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.img-card {
+    width: 32px;
+}
+
+.resumen {
+    @include flex-box(flex, space-around, center);
+    padding-bottom: 12px;
+    border-bottom: 2px solid c(primary);
+    margin: 12px;
+
+    h3 {
+        font-size: 20px;
+        margin: 0;
+        align-items: center;
+    }
+}
+
+.cards-resumen {
+    display: flex;
+    flex-direction: column;
+}
+
+.agregar-gasto {
+    grid-area: 2 / 1 / 6 / 2;
+}
+
+.lista-gastos {
+    grid-area: 2 / 2 / 5 / 5;
+}
+
+.viajes {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.salida {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+.otro {
+    grid-area: 5 / 4 / 6 / 5;
+}
+
+.box-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form,
+form input {
+    width: 100%;
+}
+
+.total-anio,
+.total-mes,
+.ultima-semana,
+.promedio-mes,
+.viajes,
+.salida,
+.otro {
+    display: flex;
+    gap: $space-4;
+    align-items: center;
+    padding: $space-4;
+
+    h4 {
+        font-size: 18px;
+    }
+
+    small {
+        font-size: 12px;
+    }
+}
