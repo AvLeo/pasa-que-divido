@@ -9,7 +9,7 @@
     width: 100%;
     gap: 10px;
 
-    @include respond-down(xs){
+    @include respond-down(xs) {
         @include flex-box(flex, center, center, column)
     }
 }

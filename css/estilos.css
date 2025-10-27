@@ -310,6 +310,28 @@ button .button {
   border-radius: 0 12px 12px 0;
 }
 
+.container-group {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.modal-content > div {
+  width: 100%;
+}
+
+.modal-body .miembros-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-body .miembros-form > textarea {
+  border-radius: 12px;
+  padding: 6px;
+}
+
 .inicio {
   min-height: calc(100vh - 75px);
   display: flex;
