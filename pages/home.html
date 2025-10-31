@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Accede a tu panel personalizado para revisar grupos, gastos recientes y crear nuevos registros en Pasá que divido.">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Pasá que divido">
+        <meta property="og:locale" content="es_AR">
+        <meta property="og:type" content="website">
+        <meta property="og:description"
+            content="Gestiona gastos compartidos y personales desde tu panel en Pasá que divido.">
+        <meta property="og:image" content="../img/logo.webp">
+        <meta property="og:site_name" content="Pasá que divido">
+        <link rel="canonical" href="https://pasaquedivido.com/pages/home.html">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/estilos.css">
-        <title>Home</title>
+        <title>Inicio | Pasá que divido</title>
     </head>
 
     <body>
         <!-- NAV BAR -->
-        <nav class="navbar navbar-expand-lg gbackround-cards">
+        <nav class="navbar navbar-expand-lg gbackround-cards" aria-label="Navegación principal">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../img/logo.webp" alt="logo" class="nav-icon">
+                <a class="navbar-brand" href="../index.html" aria-label="Pasá que divido inicio">
+                    <img src="../img/logo.webp" alt="Isotipo Pasá que divido" class="nav-icon">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,6 +55,8 @@
         <!-- NAV BAR -->
         <main>
             <section class="home">
+                <h1>Tu panel personal</h1>
+                <p>Consulta tus grupos activos, registra gastos recientes y mantén tus finanzas compartidas al día.</p>
                 <div class="grupos background-cards" id="section-grupos">
                     <h3>Grupos</h3>
                 </div>
@@ -73,7 +86,7 @@
                     </div>
                 </div>
                 <div class="conocenos background-cards">
-                    <a class="button" style="width: 100%" href="./mis-gastos.html"> Ir a mis gastos</a>
+                    <a class="button" style="width: 100%" href="./mis-gastos.html">Ir a mis gastos</a>
                     <button type="button" class="btn btn-primary button" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Crear grupo
@@ -83,13 +96,16 @@
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../img/restautante-1.webp" class="d-block w-100 img-carr" alt="restautante-1">
+                                <img src="../img/restautante-1.webp" class="d-block w-100 img-carr"
+                                    alt="Reunión de amigos en un restaurante">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/restautante-2.webp" class="d-block w-100 img-carr" alt="restautante-2">
+                                <img src="../img/restautante-2.webp" class="d-block w-100 img-carr"
+                                    alt="Equipo celebrando un evento">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/restautante-2.webp" class="d-block w-100 img-carr" alt="restautante-3">
+                                <img src="../img/restautante-2.webp" class="d-block w-100 img-carr"
+                                    alt="Grupo compartiendo gastos durante un viaje">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -107,12 +123,12 @@
                 <div class="banner background-cards">
                     <h3>Usuarios frecuentes</h3>
                     <div class="miembros-grupo">
-                        <small>pepito</small>
-                        <small>juan</small>
-                        <small>perez</small>
-                        <small>pepito</small>
-                        <small>juan</small>
-                        <small>perez</small>
+                        <small>Pepito</small>
+                        <small>Juan</small>
+                        <small>Perez</small>
+                        <small>Pepito</small>
+                        <small>Juan</small>
+                        <small>Perez</small>
                     </div>
                 </div>
             </section>

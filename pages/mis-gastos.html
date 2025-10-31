@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Consulta tus gastos mensuales, promedios y registra nuevos movimientos en Pasá que divido.">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Pasá que divido">
+        <meta property="og:locale" content="es_AR">
+        <meta property="og:type" content="website">
+        <meta property="og:description"
+            content="Lleva un seguimiento detallado de tus gastos personales dentro de Pasá que divido.">
+        <meta property="og:image" content="../img/logo.webp">
+        <meta property="og:site_name" content="Pasá que divido">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/estilos.css">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <title>Grupos</title>
+        <title>Mis gastos | Pasá que divido</title>
     </head>
 
     <body>
         <!-- NAV BAR -->
-        <nav class="navbar navbar-expand-lg gbackround-cards">
+        <nav class="navbar navbar-expand-lg gbackround-cards" aria-label="Navegación principal">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../img/logo.webp" alt="" class="nav-icon">
+                <a class="navbar-brand" href="../index.html" aria-label="Pasá que divido inicio">
+                    <img src="../img/logo.webp" alt="Isotipo de Pasá que divido" class="nav-icon">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +52,9 @@
         </nav>
         <!-- NAV BAR -->
         <main>
-            <h2>Mis gastos mensuales</h2>
+            <h1>Mis gastos mensuales</h1>
+            <p>Visualiza la evolución de tus finanzas personales y registra nuevos movimientos para mantenerte al día.
+            </p>
             <section class="detalles-gastos">
                 <div class="total-anio background-cards">
                     <img src="../img/low-price_15443437.webp" alt="resumen" class="img-card">
@@ -52,21 +64,21 @@
                     </div>
                 </div>
                 <div class="total-mes background-cards">
-                    <img class="img-card" src="../img/money_6791502.webp" alt="total-mes">
+                    <img class="img-card" src="../img/money_6791502.webp" alt="Resumen del gasto mensual">
                     <div class="cards-resumen">
                         <h4>$500.000</h4>
                         <small>Este mes</small>
                     </div>
                 </div>
                 <div class="promedio-mes background-cards">
-                    <img class="img-card" src="../img/investing_6557544.webp" alt="promedio" class="img-card">
+                    <img class="img-card" src="../img/investing_6557544.webp" alt="Promedio de gastos mensuales">
                     <div class="cards-resumen">
                         <h4>$700.000</h4>
                         <small>Prom. Mensual</small>
                     </div>
                 </div>
                 <div class="ultima-semana background-cards">
-                    <img src="../img/7-days_6520509.webp" alt="last-week" class="img-card">
+                    <img src="../img/7-days_6520509.webp" alt="Gastos de la última semana" class="img-card">
                     <div class="cards-resumen">
                         <h4>$100.000</h4>
                         <small>Utima Semana</small>
@@ -105,22 +117,22 @@
                     </section>
                 </div>
                 <div class="viajes background-cards">
-                    <img src="../img/tickets_2376122.webp" alt="ultimo-viaje" class="img-card">
-                    <div cards-resumen>
+                    <img src="../img/tickets_2376122.webp" alt="Último viaje registrado" class="img-card">
+                    <div class="cards-resumen">
                         <h4>Mar del plata</h4>
                         <small>Ultimo viaje</small>
                     </div>
                 </div>
                 <div class="salida background-cards">
-                    <img src="../img/celebration_6358525.webp" alt="ultima-salida" class="img-card">
-                    <div cards-resumen>
+                    <img src="../img/celebration_6358525.webp" alt="Última salida registrada" class="img-card">
+                    <div class="cards-resumen">
                         <h4>Cumple Guille</h4>
                         <small>Ultima salida</small>
                     </div>
                 </div>
                 <div class="otro background-cards">
-                    <img src="../img/quiz-game_10199730.webp" alt="ultima-sorpresa" class="img-card">
-                    <div cards-resumen>
+                    <img src="../img/quiz-game_10199730.webp" alt="Última sorpresa registrada" class="img-card">
+                    <div class="cards-resumen">
                         <h4>Multa alcoholemia</h4>
                         <small>Ultima sorpresa.</small>
                     </div>
