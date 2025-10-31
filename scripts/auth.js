@@ -131,10 +131,10 @@ const attachRegistroEvent = () => {
 }
 
 // LOGOUT 
-function logout (){
+function logout() {
     localStorage.removeItem("loged")
     return window.location.href = "/"
-} 
+}
 
 
 // SWAP

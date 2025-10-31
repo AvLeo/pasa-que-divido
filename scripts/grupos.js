@@ -10,7 +10,7 @@ const showGruposTop = (grupos) => {
             const miembros = g.miembros.map(m => `<small>${m}</small>`)
             return `
             <div class=${sectionGrupos[index]}>
-                    <img src="../img/grupos/grupo-amigos1.webp" alt="" width="150px">
+                    <img src="../img/grupos/grupo-amigos1.webp" alt="amigos" width="150px">
                     <div>
                         <h4>${g.nombre}</h4>
                         <div class="miembros-grupo">
@@ -25,7 +25,7 @@ const showGruposTop = (grupos) => {
             const miembros = g.miembros.map(m => `<small>${m}</small>`)
             return `
                 <article class="">
-                    <img src="../img/grupos/grupo-amigos3.webp" alt="" width="150px">
+                    <img src="../img/grupos/grupo-amigos3.webp" alt="amigos" width="150px">
                         <div>
                             <h4>${g.nombre}</h4>
                             <div class="miembros-grupo">
@@ -50,7 +50,7 @@ const showGruposTop = (grupos) => {
             const miembros = g.miembros.map(m => `<small>${m}</small>`)
             return `
             <div class=${sectionGrupos[index]}>
-                    <img src="../img/grupos/grupo-amigos1.webp" alt="" width="150px">
+                    <img src="../img/grupos/grupo-amigos1.webp" alt="amigos" width="150px">
                     <div>
                         <h4>${g.nombre}</h4>
                         <div class="miembros-grupo">
@@ -86,7 +86,7 @@ const showGrupos = (grupos) => {
             <article class="animate__animated animate__slideInLeft grupo-card">
             <h4>${grupo.nombre}</h4>
             <div class="detalle">
-                <img src="../img/usuario.webp" alt="" width="20px" height="20px">
+                <img src="../img/usuario.webp" alt="amigos" width="20px" height="20px">
                     <p>${grupo.miembros.length}</p>
             </div>
             <div class="miembros-grupo">
